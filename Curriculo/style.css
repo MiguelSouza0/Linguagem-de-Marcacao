@@ -25,6 +25,10 @@ a:hover{
 .text-center, .copyright{
     text-align: center;
 }
+.copyright{
+    font-style: italic;
+    font-weight: bold;
+}
 li{
     text-align: start;
 }
