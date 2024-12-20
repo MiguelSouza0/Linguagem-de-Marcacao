@@ -1,0 +1,17 @@
+.table-striped tr:nth-child(2n-1) {
+    background-color: rgb(240,248,255);
+}
+table{
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    min-width: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+.nomes{text-align: left;}
+td, th{
+    padding: 5px;
+}
