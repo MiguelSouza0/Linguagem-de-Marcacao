@@ -64,14 +64,10 @@ header .intro-text .btn-intro {
 /* Main */
 main {
   color: #333;
-  display: flex;
+  display: grid;
   text-align: center;
-  flex-flow: wrap;
   padding: 100px 15%;
-}
-
-.service-description{
-  flex-basis: 100%;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 main .service .circle-icon {
@@ -87,26 +83,24 @@ main .service .circle-icon {
   font-size: 48px;
 }
 
+main .service-description{
+  grid-column: 1/4;
+}
+
 main .service-description  h1 {
   font-size: 3em;
-  flex-basis: 100%;
 }
 
 main .service-description  p {
   color: #777;
   font-style: italic;
   margin-bottom: 90px;
-  flex-basis: 100%;
 }
 
 main .service p {
   color: #777;
   font-size: 14px;
   line-height: 1.75;
-}
-
-.service, .footer-content section{
-  flex-basis: calc(100% / 3);
 }
 
 /* footer */
@@ -120,6 +114,10 @@ footer {
   padding: 30px 15% 55px;
 }
 
+footer .footer-content section{
+  flex-basis: calc(100%/3);
+}
+
 footer section.social{
   flex-direction: column;
 }
@@ -129,7 +127,7 @@ footer section.social ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  padding: 0;
 }
 
 footer section.social a {
